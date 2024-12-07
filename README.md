@@ -1,9 +1,8 @@
 ## Biblioteca de filmes favoritos 
 
 **Apresentação:**
-O software é para uso basico para voce efetuar o cadastro de filmes que forem do seu interesse para deixar salvo alem da usa memoria.
-O programa é construido encima de Node com banco de dados para armanezar as informações inseridas. 
-Conta com funções no banco de dados em CRUD para melhor inserir e editar as informações inseridas.   
+O software é para uso basico para voce efetuar o cadastro de filmes que forem do seu interesse para deixar salvo além da sua memoria.
+O programa é construido encima de Node.js com banco de dados para armanezar as informações inseridas.    
 
 **Tecnologias Utilizadas:**
 1. Linguagem do backEnd: JavaScript;
