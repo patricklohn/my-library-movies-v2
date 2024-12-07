@@ -1,0 +1,218 @@
+*{
+    font-family:Helvetica, sans-serif;
+}
+
+h1,h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/*Form*/
+
+.form, .movies-container{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.form input[type="submit"]{
+    padding: 1.5rem;
+    color: #fff;
+    background-color: #25D356;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.form input[type="submit"]:hover{
+    opacity: 1;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.form-control input{
+    padding: 5px;
+}
+
+.form-control textarea{
+    resize: none;
+    animation: none;
+    height: 150px;
+    padding: 1rem;
+}
+
+/*MOVIES*/
+.movies-container div{
+    border-bottom:1px solid #ccc;
+    padding:5px;
+    margin:5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/*MOVIES ALL*/
+
+.moviesAll-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    border: 1px solid black ;
+    gap: 0.5rem;
+}
+
+.movie-all{
+    margin-top: 1.5rem; 
+    width: 30%; 
+    padding: 1rem; 
+    border:1px solid #000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.movie-all img{
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.movie-all a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #25D356;
+    padding: 1rem;
+}
+
+#searchGoogle{
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 0;
+    border-bottom: 1px solid #25D356;
+}
+
+.movie-all textarea{
+    height: 125px;
+    font-size: 1rem;
+    border: none;
+    resize: none;
+    direction: none;
+    background-color: #fff;
+    color: #000;
+}
+
+/*MOVIE PAGE*/
+
+.movie-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    text-align: center;
+}
+
+/*Nav Bar*/
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar ul{
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.nav-bar li{
+    background-color: #25D356;
+    padding: 0.7rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#style-search{
+    display: flex;
+    justify-content: center;
+}
+
+#style-search input{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Delete*/
+
+.DeleteMovie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.DeleteMovie label{
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #FF0000;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.DeleteMovie input[type="submit"]{
+    margin-top: 1rem;
+    border: none;
+    animation: none;
+    padding: 1rem;
+    background-color: #ccc;
+    color: #8B0000;
+    border-radius: 10px;
+    font-size: 1rem;
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.DeleteMovie input[type="submit"]:hover{
+    opacity: 1;
+}

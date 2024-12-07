@@ -1,0 +1,44 @@
+<h2>Edite as informações do seu Filme:</h2>
+<form action="/movie/update-movie" method="POST" class="form">
+    <input type="hidden" name="id" value="{{movie.id}}">
+<div class="container-form">
+<div class="form-control">
+    <label for="movie">Nome do Filme:</label>
+    <input type="text" name="movie" value="{{movie.name}}">
+</div>
+<div class="form-control">
+    <label for="avaliacao">Avaliacao de 0 a 10:</label>
+    <input type="number" name="avaliacao" value="{{movie.avaliacao}}">
+</div>
+<div class="form-control">
+    <label for="categoria">Categoria do Filme:</label>
+    <input type="text" name="categoria" value="{{movie.categoria}}">
+</div>
+<div class="form-control">
+    <label for="imagemMovie">Coloque um Link para a imagem do filme:</label>
+    <input type="text" name="imagemMovie" value="{{movie.linkImg}}">
+</div>
+<div class="form-control">
+    <label for="descricao">Escreva uma breve descrição do Filme</label>
+    <textarea name="descricao" id="descricao">
+        {{movie.descricao}}
+    </textarea>
+</div>
+<div class="form-control">
+    <label for="situacao">Situação do Filme</label>
+    <select name="situacao" id="situacao">
+        <option value="1">ATIVO</option>
+        <option value="0">INATIVO</option>
+    </select>
+</div>
+</div>
+    <input type="submit" value="Salvar">
+</form>
+
+<form action="/moivie/deleteId" method="POST">
+        <input type="hidden" name="id" value="{{movie.id}}">
+        <div class="DeleteMovie">
+            <label for="deletar">Area de Risco Cuidado pois essa ação é irreversivel</label>
+            <input name="deletar" type="submit" value="Deletar Cadastro">
+        </div>
+</form>

@@ -1,0 +1,27 @@
+<h2>Cadastrar o seu Filme:</h2>
+<form action="/movies/insermovie" method="POST" class="form">
+<div class="container-form">
+<div class="form-control">
+    <label for="movie">Nome do Filme:</label>
+    <input type="text" name="movie" placeholder="Digite o Nome">
+</div>
+<div class="form-control">
+    <label for="avaliacao">Avaliacao de 0 a 10:</label>
+    <input type="number" name="avaliacao" placeholder="Digite a sua avaliacao">
+</div>
+<div class="form-control">
+    <label for="categoria">Categoria do Filme:</label>
+    <input type="text" name="categoria" placeholder="Digite a categoria do filme">
+</div>
+<div class="form-control">
+    <label for="imagemMovie">Coloque um Link para a imagem do filme:</label>
+    <input type="text" name="imagemMovie" placeholder="Coloque um link para o filme">
+</div>
+<div class="form-control">
+    <label for="descricao">Escreva uma breve descrição do Filme</label>
+    <textarea name="descricao" id="descricao">
+    </textarea>
+</div>
+</div>
+    <input type="submit" value="Cadastrar">
+</form>

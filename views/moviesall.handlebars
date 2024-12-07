@@ -1,0 +1,17 @@
+<h1>Catalogo de Filmes</h1>
+<div class="moviesAll-container">
+    {{#each moviesAll}}
+        <div class="movie-all">
+            <p>ID: #{{this.id}}</p>
+            <p class="bold">{{this.name}}</p>
+            <img src="{{this.linkImg}}" alt="Imagem Do filme">
+            <p>Categoria: {{this.categoria}}</p>
+            <p>Avaliação: {{this.avaliacao}}</p>
+            <textarea readonly disabled>
+                {{this.descricao}}
+            </textarea>
+            <a id="searchGoogle" href="https://www.google.com/search?q={{this.name}}" target="_blank">Pesquisar no google</a>
+            <a href="/movies/edit/{{this.id}}">Editar informações do Filme</a>
+        </div>
+    {{/each}}
+</div>
