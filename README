@@ -1,0 +1,19 @@
+# Biblioteca de filmes favoritos 
+
+**Apresentação:**
+O software é para uso basico para voce poder efetuar o cadastro de filmes que forem do seu interesse para deixar salvo alem da usa memoria. 
+
+**Tecnologias Utilizadas:**
+* Linguagem do backEnd: JavaScript;
+* Contrução do Front: Handlebars; 
+* Ambiente de execução: Node.js;
+* Banco de dados: MySQL;
+
+**Instalação**
+Segue alguns passos utéis para instalação: 
+
+* 1 -> Abrir o seu editor de codigo abrir o terminal e executar o comando: git clone https://github.com/patricklohn/my-library-moviesV2.git;
+* 2 -> O projeto possui algumas tecnologias favor verificar elas e deixalas funcionando no seu ambiente. ex: Node e MySQL;
+* 3 -> Após confirmar se todas as técnologias estão funcionando favor instalar as dependecias abrindo o terminal e executando o comando npm install; 
+* 4 -> Agora precisamos configurar o banco de dados no projeto voce pode abrir o arquivo db/config.js e colocar as informações do seu banco de dados;
+* 5 -> Agora podemos executar o programa dando um npm start; 

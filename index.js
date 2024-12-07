@@ -1,6 +1,6 @@
 const express = require("express")
 const exphbs = require("express-handlebars")
-const pool = require('./db/conn') // alterar conn para config
+const pool = require('./db/config')
 
 // Configurações do server
 
