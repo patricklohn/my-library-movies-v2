@@ -1,6 +1,6 @@
 const express = require("express")
 const exphbs = require("express-handlebars")
-const pool = require('./db/config')
+const pool = require('./db/config') // caso esteja como conn favor mudar para config
 
 // Configurações do server
 
@@ -28,14 +28,15 @@ app.get('/cadastrarMovie', (req, res)=>{
 
 app.post('/movie/update-movie',(req,res)=>{
     const id = req.body.id;
+    const nome = req.body.movie;
     const avaliacao = req.body.avaliacao;
     const categoria = req.body.categoria;
     const imagemMovie = req.body.imagemMovie;
     const descricao = req.body.descricao;
     const situacao = req.body.situacao;
 
-    const returnSQL = `UPDATE movies SET ?? = ?, ?? = ?, ?? = ?, ?? = ?, ?? = ? WHERE ?? = ?;`
-    const data = ["avaliacao",avaliacao,"categoria",categoria,"linkImg",imagemMovie,"descricao",descricao,"situacao",situacao,"id",id]
+    const returnSQL = `UPDATE movies SET ?? = ?, ?? = ?, ?? = ?, ?? = ?, ?? = ?, ?? = ? WHERE ?? = ?;`
+    const data = ["name",nome,"avaliacao",avaliacao,"categoria",categoria,"linkImg",imagemMovie,"descricao",descricao,"situacao",situacao,"id",id]
     pool.query(returnSQL,data,function(err,data){
         if(err){
             console.log(err)
