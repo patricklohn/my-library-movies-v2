@@ -26,9 +26,11 @@ Segue alguns passos utéis para instalação:
 * 3 -> Após confirmar se todas as técnologias estão funcionando favor instalar as dependecias abrindo o terminal e executando o comando npm install; 
 * 4 -> Agora precisamos configurar o banco de dados no projeto voce pode abrir o arquivo db/config.js e colocar as informações do seu banco de dados;
 
-Obs: Caso não queira efetuar ajustes no codigo recomendo criar as informações de maneira que esteja no banco. 
-Após criar o seu Banco e adicionar no projeto recomendo executar esse comando SQL para criar a table e as colunas de forma que o codigo ira interpretar. 
+Obs: Configuração do Banco de Dados para o Projeto
+1. Criando a Tabela e Colunas do Banco de Dados
+Se você está configurando o banco de dados do zero, execute o seguinte comando SQL para criar a tabela movies com todas as colunas necessárias:
 
+Copiar código sql
 CREATE TABLE movies (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
@@ -38,9 +40,12 @@ CREATE TABLE movies (
     descricao VARCHAR(1000),
     situacao BOOLEAN
 );
+Nota: Certifique-se de conectar o projeto ao banco de dados antes de executar o comando acima.
 
-Caso voce já tenha criado a table movies manualmente voce pode criar os campos manualmente tambem seguindo o padrão do codigo ou executar esse outro comando SQL. 
+2. Adicionando Colunas a uma Tabela Existente
+Se a tabela movies já foi criada, mas está faltando alguma coluna, você pode adicioná-las com o seguinte comando SQL:
 
+Copiar código sql
 ALTER TABLE movies
 ADD COLUMN name VARCHAR(255),
 ADD COLUMN avaliacao INT,
@@ -49,9 +54,14 @@ ADD COLUMN linkImg VARCHAR(2500),
 ADD COLUMN descricao VARCHAR(1000),
 ADD COLUMN situacao BOOLEAN;
 
-Caso voce precise renomear alguma coluna caso tenha digitado errado e não queira mexer no codigo fonte da aplicação voce pode alterar direto no banco executando esse outro codigo. Segue exemplo: 
+3. Renomeando uma Coluna Existente
+Caso você tenha criado uma coluna com o nome errado e não deseja alterar o código da aplicação, use este comando para renomeá-la diretamente no banco de dados.
 
-ALTER TABLE produtos
+Exemplo: Renomeando a coluna LinkImg para imagem_link:
+
+sql
+Copiar código
+ALTER TABLE movies
 RENAME COLUMN LinkImg TO imagem_link;
 
 * 5 -> Agora que já fizemos todos os processos e o banco esta configurado podemos executar o programa dando um npm start; 
