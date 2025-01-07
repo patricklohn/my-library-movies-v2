@@ -30,7 +30,7 @@ Obs: Configuração do Banco de Dados para o Projeto
 1. Criando a Tabela e Colunas do Banco de Dados
 Se você está configurando o banco de dados do zero, execute o seguinte comando SQL para criar a tabela movies com todas as colunas necessárias:
 
-Copiar código sql
+Copiar código sql :
 CREATE TABLE movies (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
@@ -45,7 +45,7 @@ Nota: Certifique-se de conectar o projeto ao banco de dados antes de executar o 
 2. Adicionando Colunas a uma Tabela Existente
 Se a tabela movies já foi criada, mas está faltando alguma coluna, você pode adicioná-las com o seguinte comando SQL:
 
-Copiar código sql
+Copiar código sql: 
 ALTER TABLE movies
 ADD COLUMN name VARCHAR(255),
 ADD COLUMN avaliacao INT,
@@ -59,8 +59,7 @@ Caso você tenha criado uma coluna com o nome errado e não deseja alterar o có
 
 Exemplo: Renomeando a coluna LinkImg para imagem_link:
 
-sql
-Copiar código
+Copiar código sql :
 ALTER TABLE movies
 RENAME COLUMN LinkImg TO imagem_link;
 
